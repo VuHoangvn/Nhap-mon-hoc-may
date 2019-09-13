@@ -8,4 +8,7 @@ https://chromedriver.chromium.org/downloads?fbclid=IwAR3O37poTHgjuWsUSq2VaUpW-eo
   https://viblo.asia/p/selenium-tutorials-31-bai-huong-dan-hoc-selenium-eW65Gx8PKDO
   ### docs:
   https://selenium-python.readthedocs.io/locating-elements.html
+
+** file selenium_scraper để crawl 1 sản phẩm(test) tr
+** file crawl... dùng để duyệt toàn ghép
   
