@@ -12,3 +12,10 @@ https://chromedriver.chromium.org/downloads?fbclid=IwAR3O37poTHgjuWsUSq2VaUpW-eo
 ** file selenium_scraper để crawl 1 sản phẩm(test) tr
 ** file crawl... dùng để duyệt toàn ghép
   
+## Mô tả dữ liệu:
+  40407 bản comment trong đó:
+  -1 sao: 2396
+  -2 sao: 962
+  -3 sao 1661
+  -4 sao: 2943
+  -5 sao: 32445
