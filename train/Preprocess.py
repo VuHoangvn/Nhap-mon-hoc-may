@@ -7,8 +7,14 @@ from collections import Counter
 
 class Preprocess:
     def __init__(self):
+        stop_word = []
+        with open('stopword.txt') as fp:
+            for row in fp:
+                stop_word.append(row.strip())
+        stop_word = set(stop_word)
+        self.stop_word = stop_word
         return
-
+    @staticmethod
     def readStopWord(self):
         stop_word = []
         with open('stopword.txt') as fp:
@@ -166,8 +172,12 @@ class Preprocess:
         # remove white spaces
         str = str.strip()
         str = re.sub(' +', ' ', str)
-        # tokenize by pyvi
+        # # tokenize by pyvi
         str = ViTokenizer.tokenize(str)
+        # # remove stopword
+        # str = str.split()
+        # str = [i for i in str if not i in self.stop_word]
+        # str = ' '.join(str)
         return str
 
     def balance_classes(self,xs, ys):

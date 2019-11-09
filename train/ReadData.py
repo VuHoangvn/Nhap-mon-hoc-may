@@ -9,7 +9,7 @@ def readCSVData(fileName):
             row = row.split('<fff>')
             star.append(row[0])
             review.append(p.doPreprocess(row[1]))
-    review, star = p.balance_classes(review, star)
+    # review, star = p.balance_classes(review, star)
     return review, star
 
 def readTXTData(fileName):
@@ -22,7 +22,7 @@ def readTXTData(fileName):
             star.append(line[0])
             review.append(p.doPreprocess(line[2:]))
             line = fp.readline()
-    return p.balance_classes(review, star)
+    return review, star
 
-review, star = readCSVData('data_final2.csv')
-print(len(review))
+# review, star = readCSVData('data_final2.csv')
+# print(len(review))
