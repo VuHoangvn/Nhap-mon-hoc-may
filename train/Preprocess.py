@@ -166,14 +166,14 @@ class Preprocess:
         # to lower case
         
         # number removing
-        str = re.sub(r'\d+', '', str)
+#         str = re.sub(r'\d+', '', str)
         # remove punctuation
-        str = str.translate(str.maketrans("","", string.punctuation))
+#         str = str.translate(str.maketrans("","", string.punctuation))
         # remove white spaces
-        str = str.strip()
-        str = re.sub(' +', ' ', str)
+#         str = str.strip()
+#         str = re.sub(' +', ' ', str)
         # # tokenize by pyvi
-        str = ViTokenizer.tokenize(str)
+#         str = ViTokenizer.tokenize(str)
         # # remove stopword
         # str = str.split()
         # str = [i for i in str if not i in self.stop_word]
